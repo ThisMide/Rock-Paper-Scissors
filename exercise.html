@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises</title>
+  </head>
+  <body>
+    <script>
+      //      Time Exercise
+      let hours = 14.26;
+
+      if (hours <= 11.59) {
+        console.log("Good morning");
+      } else if (hours >= 12.0 && hours <= 15.59) {
+        console.log("Good afternoon");
+      } else if (hours >= 16.0 && hours <= 23.59) {
+        console.log("Good night");
+      }
+
+      //    Discount based on age and holidays exercise
+      let age = 2;
+      const isHoliday = false;
+      if (!isHoliday && (age <= 6 || age >= 65)) {
+        console.log("Discount");
+      } else if (isHoliday && (age <= 6 || age >= 65)) {
+        console.log("No discount");
+      }
+
+      //    Coin Toss Exercise for heads or tails
+      const coinToss = Math.random();
+      let result = coinToss;
+
+      coinToss > 0 && coinToss <= 0.5 ? result : result;
+
+      let guess =
+        result > 0 && result <= 0.5
+          ? console.log(`${result} is Head, you win!`)
+          : console.log(`${result} is Tail, you lose!`);
+    </script>
+  </body>
+</html>
